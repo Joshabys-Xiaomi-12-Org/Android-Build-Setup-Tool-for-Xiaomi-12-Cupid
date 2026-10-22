@@ -109,3 +109,21 @@ TARGET_SUPPORTED_REFRESH_RATES := 60,120
 TARGET_ENABLE_BLUR := true
 
 TARGET_INCLUDE_AXFX := true\n" >> device/xiaomi/thor/lineage_thor.mk
+
+echo -e "\n# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 64,8,2
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer name (underscores become spaces in the UI)
+AXION_MAINTAINER := Joshaby
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Snapdragon®_8+_Gen_1
+
+TARGET_IS_LOW_RAM ?= false
+
+TARGET_SUPPORTED_REFRESH_RATES := 60,120
+
+TARGET_ENABLE_BLUR := true
+
+TARGET_INCLUDE_AXFX := true\n" >> device/xiaomi/mondrian/lineage_mondrian.mk

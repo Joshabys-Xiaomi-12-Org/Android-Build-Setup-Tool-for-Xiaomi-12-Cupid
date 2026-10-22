@@ -3,82 +3,88 @@
 # Specific Device Tree
 
 echo "Cloning device/xiaomi/cupid - Xiaomi 12 folder..."
-git clone https://github.com/Joshaby/android_device_xiaomi_cupid.git -b lineage-23.2 device/xiaomi/cupid
+git clone --depth=1 https://github.com/Joshaby/android_device_xiaomi_cupid.git -b lineage-23.2 device/xiaomi/cupid
 
 echo "Cloning vendor/xiaomi/cupid - Xiaomi 12 folder..."
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_cupid.git -b lineage-23.2 vendor/xiaomi/cupid
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_cupid.git -b lineage-23.2 vendor/xiaomi/cupid
 
 echo "Cloning device/xiaomi/zeus - Xiaomi 12 Pro folder..."
-git clone https://github.com/LineageOS/android_device_xiaomi_zeus.git -b lineage-23.2 device/xiaomi/zeus
+git clone --depth=1 https://github.com/LineageOS/android_device_xiaomi_zeus.git -b lineage-23.2 device/xiaomi/zeus
 
 echo "Cloning vendor/xiaomi/zeus - Xiaomi 12 Pro folder..."
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_zeus.git -b lineage-23.2 vendor/xiaomi/zeus
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_zeus.git -b lineage-23.2 vendor/xiaomi/zeus
 
 echo "Cloning device/xiaomi/mayfly - Xiaomi 12S folder..."
-git clone https://github.com/LineageOS/android_device_xiaomi_mayfly.git -b lineage-23.2 device/xiaomi/mayfly
+git clone --depth=1 https://github.com/LineageOS/android_device_xiaomi_mayfly.git -b lineage-23.2 device/xiaomi/mayfly
 
 echo "Cloning vendor/xiaomi/mayfly - Xiaomi 12S folder..."
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_mayfly.git -b lineage-23.2 vendor/xiaomi/mayfly
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_mayfly.git -b lineage-23.2 vendor/xiaomi/mayfly
 
 echo "Cloning device/xiaomi/unicorn - Xiaomi 12S Pro folder..."
-git clone https://github.com/LineageOS/android_device_xiaomi_unicorn.git -b lineage-23.2 device/xiaomi/unicorn
+git clone --depth=1 https://github.com/LineageOS/android_device_xiaomi_unicorn.git -b lineage-23.2 device/xiaomi/unicorn
 
 echo "Cloning vendor/xiaomi/unicorn - Xiaomi 12S Pro folder..."
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_unicorn.git -b lineage-23.2 vendor/xiaomi/unicorn
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_unicorn.git -b lineage-23.2 vendor/xiaomi/unicorn
 
 echo "Cloning device/xiaomi/diting - Xiaomi 12T Pro folder..."
-git clone https://github.com/LineageOS/android_device_xiaomi_diting.git -b lineage-23.2 device/xiaomi/diting
+git clone --depth=1 https://github.com/LineageOS/android_device_xiaomi_diting.git -b lineage-23.2 device/xiaomi/diting
 
 echo "Cloning vendor/xiaomi/diting - Xiaomi 12T Pro folder..."
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_diting.git -b lineage-23.2 vendor/xiaomi/diting
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_diting.git -b lineage-23.2 vendor/xiaomi/diting
 
 echo "Cloning device/xiaomi/thor - Xiaomi 12S Ultra folder..."
-git clone https://github.com/LineageOS/android_device_xiaomi_thor.git -b lineage-23.2 device/xiaomi/thor
+git clone --depth=1 https://github.com/LineageOS/android_device_xiaomi_thor.git -b lineage-23.2 device/xiaomi/thor
 
-echo "Cloning vendor/xiaomi/thor - Xiaomi 12S Ultra  folder..."
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_thor.git -b lineage-23.2 vendor/xiaomi/thor
+echo "Cloning vendor/xiaomi/thor - Xiaomi 12S Ultra folder..."
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_thor.git -b lineage-23.2 vendor/xiaomi/thor
+
+echo "Cloning device/xiaomi/marble - Poco F5 folder..."
+git clone --depth=1 https://github.com/LineageOS/android_device_xiaomi_marble.git -b lineage-23.2 device/xiaomi/marble
+
+echo "Cloning vendor/xiaomi/marble - Poco F5 folder..."
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_marble.git -b lineage-23.2 vendor/xiaomi/marble
 
 echo "Cloning device/xiaomi/mondrian - Poco F5 Pro folder..."
-git clone https://github.com/LineageOS/android_device_xiaomi_mondrian.git -b lineage-23.2 device/xiaomi/mondrian
+git clone --depth=1 https://github.com/LineageOS/android_device_xiaomi_mondrian.git -b lineage-23.2 device/xiaomi/mondrian
 
 echo "Cloning vendor/xiaomi/mondrian - Poco F5 Pro folder..."
-git clone https://github.com/TheMuppets/proprietary_vendor_xiaomi_mondrian.git -b lineage-23.2 vendor/xiaomi/mondrian
+git clone --depth=1 https://github.com/TheMuppets/proprietary_vendor_xiaomi_mondrian.git -b lineage-23.2 vendor/xiaomi/mondrian
 
 # Common SM8450 Tree + MIUI/HyperOS Camera
 
 echo "Cloning device/xiaomi/sm8450-common folder..."
-git clone https://github.com/Joshaby/android_device_xiaomi_sm8450-common -b lineage-23.2 device/xiaomi/sm8450-common
+git clone --depth=1 https://github.com/Joshaby/android_device_xiaomi_sm8450-common -b lineage-23.2-ext4-2 device/xiaomi/sm8450-common
 
 echo "Cloning vendor/xiaomi/sm8450-common..."
-git clone https://github.com/Joshaby/proprietary_vendor_xiaomi_sm8450-common.git -b lineage-23.2-gpu-driver-863.1 vendor/xiaomi/sm8450-common
+git clone --depth=1 https://github.com/Joshaby/proprietary_vendor_xiaomi_sm8450-common.git -b lineage-23.2-gpu-driver-863.1 vendor/xiaomi/sm8450-common
 
 echo "Cloning vendor/xiaomi/miuicamera-cupid folder..."
-git clone https://github.com/Joshaby/proprietary_vendor_xiaomi_miuicamera-cupid.git -b lineage-23.2 vendor/xiaomi/miuicamera-cupid
+git clone --depth=1 https://github.com/Joshaby/proprietary_vendor_xiaomi_miuicamera-cupid.git -b lineage-23.2 vendor/xiaomi/miuicamera-cupid
 
 echo "Cloning device/xiaomi/miuicamera-cupid folder..."
-git clone https://github.com/Joshaby/android_device_xiaomi_miuicamera-cupid.git -b lineage-23.2 device/xiaomi/miuicamera-cupid
+git clone --depth=1 https://github.com/Joshaby/android_device_xiaomi_miuicamera-cupid.git -b lineage-23.2 device/xiaomi/miuicamera-cupid
 
 # Hardware Xiaomi + Dolby Atmos(LunarisDolby) + Dolby Vision
 
 echo "Cloning hardware/xiaomi folder..."
-git clone https://github.com/Evolution-X-Devices/hardware_xiaomi -b bka-no-dolby hardware/xiaomi
+git clone --depth=1 https://github.com/Evolution-X-Devices/hardware_xiaomi -b bka-no-dolby hardware/xiaomi
 
 echo "Cloning hardware/dolby folder..."
-git clone https://github.com/Evolution-X-Devices/hardware_dolby.git -b bka-aospa hardware/dolby
+git clone --depth=1 https://github.com/Evolution-X-Devices/hardware_dolby.git -b bka-aospa hardware/dolby
 
 # SM8450 Kernel + DTS + Modules + KSU Next + SusFS + Performance Optimizations Patches
 
 echo "Cloning kernel/xiaomi/sm8450 folder..."
-git clone https://github.com/Joshabys-Xiaomi-12-Org/android_kernel_xiaomi_sm8450_test.git -b lineage-23.2 kernel/xiaomi/sm8450
+git clone --depth=1 https://github.com/Joshabys-Xiaomi-12-Org/android_kernel_xiaomi_sm8450.git -b lineage-23.2-bak kernel/xiaomi/sm8450
 
 echo "Cloning kernel/xiaomi/sm8450-devicetrees folder..."
-git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8450-devicetrees.git kernel/xiaomi/sm8450-devicetrees
+git clone --depth=1 https://github.com/LineageOS/android_kernel_xiaomi_sm8450-devicetrees.git kernel/xiaomi/sm8450-devicetrees
 
 echo "Cloning kernel/xiaomi/sm8450-modules folder..."
-git clone https://github.com/LineageOS/android_kernel_xiaomi_sm8450-modules.git kernel/xiaomi/sm8450-modules
+git clone --depth=1 https://github.com/LineageOS/android_kernel_xiaomi_sm8450-modules.git kernel/xiaomi/sm8450-modules
 
 echo "Cloning Wild Kernel Patches"
-git clone https://github.com/WildKernels/kernel_patches.git extras/ksu/wild-kernel-patches
+git clone --depth=1 https://github.com/WildKernels/kernel_patches.git extras/ksu/wild-kernel-patches
 
 echo "Apply ptrace patch for older kernels"
 cd kernel/xiaomi/sm8450
@@ -89,6 +95,9 @@ curl -LSs "https://raw.githubusercontent.com/pershoot/KernelSU-Next/dev-susfs/ke
 
 echo "Apply latest SusFS"
 git clone https://gitlab.com/simonpunk/susfs4ksu.git -b gki-android12-5.10 ../../../extras/ksu/susfs
+# cd ../../../extras/ksu/susfs
+# git checkout 7373f8d8cbaee0742d3a18b0ab44d0a51d32cf78
+# cd ../../../kernel/xiaomi/sm8450
 
 cp -f ../../../extras/ksu/susfs/kernel_patches/fs/* fs
 cp -f ../../../extras/ksu/susfs/kernel_patches/include/linux/* include/linux
@@ -104,10 +113,10 @@ curl -LSs https://github.com/vc-teahouse/Baseband-guard/raw/main/setup.sh | bash
 sed -i '/^config LSM$/,/^help$/{ /^[[:space:]]*default/ { /baseband_guard/! s/selinux/selinux,baseband_guard/ } }' security/Kconfig
 
 echo "Apply LRNG v59"
-git clone --depth=1 https://github.com/smuellerDD/lrng.git drivers/char/lrng/
+git clone --depth=1 --depth=1 https://github.com/smuellerDD/lrng.git drivers/char/lrng/
 
 echo "Apply SYSVIPC kABI fix for Droidspaces"
-git clone --depth=1 https://github.com/ravindu644/Droidspaces-OSS.git droidspaces
+git clone --depth=1 --depth=1 https://github.com/ravindu644/Droidspaces-OSS.git droidspaces
 patch -p1 < droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch
 patch -p1 < droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/002.5.10_or_lower_use_android_abi_padding_for_posix_mqueue.patch 
 
@@ -120,7 +129,7 @@ patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/reduce_cach
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/add_timeout_wakelocks_globally.patch
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/f2fs_reduce_congestion.patch
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/force_tcp_nodelay.patch
-patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/int_sqrt.patch
+# patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/int_sqrt.patch
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/mem_opt_prefetch.patch
 # patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/minimise_wakeup_time.patch
 # patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/reduce_freeze_timeout.patch
@@ -128,7 +137,7 @@ patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/reduce_gc_t
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/add_limitation_scaling_min_freq.patch
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/adjust_cpu_scan_order.patch
 # patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/avoid_extra_s2idle_wake_attempts.patch
-patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/disable_cache_hot_buddy.patch
+# patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/disable_cache_hot_buddy.patch
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/f2fs_enlarge_min_fsync_blocks.patch
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/increase_ext4_default_commit_age.patch
 patch -p1 --forward < ../../../extras/ksu/wild-kernel-patches/common/increase_sk_mem_packets.patch
@@ -267,8 +276,8 @@ echo "CONFIG_BINFMT_SCRIPT=y" >> "$defconfig"
 echo "CONFIG_BINFMT_ELF=y" >> "$defconfig"
 
 # Build Optimization Configuration
-echo "CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE=y" >> "$defconfig"
-echo "CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE_O3=n" >> "$defconfig"
+echo "CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE=n" >> "$defconfig"
+echo "CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE_O3=y" >> "$defconfig"
 # echo "CONFIG_OPTIMIZE_INLINING=y" >> "$defconfig"
 
 echo "Change Kernel Name"
@@ -289,14 +298,20 @@ sed -i 's/&rpdev->driver_override/(const char **)\&rpdev->driver_override/' driv
 sed -i '72s/^/\/\//' kernel/sched/walt/sysctl.c
 sed -i 's/sched_ignore_cluster_handler/proc_dointvec/g' kernel/sched/walt/sysctl.c
 
+sed -i 's/set_nameidata(nd, old_dfd, fake_filename, NULL);/set_nameidata(nd, old_dfd, fake_filename);/g' fs/namei.c
+sed -i 's|//unsigned int sysctl_walt_rtg_cfs_boost_prio|unsigned int sysctl_walt_rtg_cfs_boost_prio|g' kernel/sched/walt/sysctl.c
+
+echo "Setup Complete!"
+
 echo "Download Alchemist LLVM 22.X"
 
-git clone https://gitlab.com/nekoshirro/Alchemist-LLVM.git -b clang-22-LTO prebuilts/clang/host/linux-x86/clang-alchemist
+git clone --depth=1 https://gitlab.com/nekoshirro/Alchemist-LLVM.git -b clang-22-LTO prebuilts/clang/host/linux-x86/clang-alchemist
 
 echo "Download GreenForce Clang 24"
-wget -P prebuilts/clang/host/linux-x86 https://github.com/greenforce-project/greenforce_clang/releases/download/20260727/gf-clang-24.0.0-20260727.tar.gz
-tar -xvzf prebuilts/clang/host/linux-x86/gf-clang-24.0.0-20260727.tar.gz -C prebuilts/clang/host/linux-x86/clang-greenforce
-ln -rs prebuilts/clang/host/linux-x86/clang-r574158/lib/clang/21/lib/x86_64-unknown-linux-gnu prebuilts/clang/host/linux-x86/clang-greenforce/lib/clang/24/lib/x86_64-unknown-linux-gnu 
+wget -P prebuilts/clang/host/linux-x86 https://github.com/greenforce-project/greenforce_clang/releases/download/20260815/gf-clang-24.0.0-20260815.tar.gz
+mkdir -p prebuilts/clang/host/linux-x86/clang-greenforce
+tar -xvzf prebuilts/clang/host/linux-x86/gf-clang-24.0.0-20260815.tar.gz -C prebuilts/clang/host/linux-x86/clang-greenforce
+ln -rs prebuilts/clang/host/linux-x86/clang-r574158/lib/clang/21/lib/x86_64-unknown-linux-gnu prebuilts/clang/host/linux-x86/clang-greenforce/lib/clang/24/lib/x86_64-pc-linux-gnu 
 
 echo "Other things"
 
@@ -306,14 +321,13 @@ sed -i '/PRODUCT_PACKAGES += \\/{N;/\n    DolbyManager/d;}' hardware/dolby/dolby
 
 # echo "Download keys for ROM signing"
 
-# git clone git@github.com:Joshaby/android_vendor_lineage-priv.git vendor/lineage-priv/keys
+# git clone --depth=1 git@github.com:Joshaby/android_vendor_lineage-priv.git vendor/lineage-priv/keys
 # cp -rf vendor/lineage-priv/keys/.android-certs $HOME/
 
 echo "Download kProfiles"
-git clone https://github.com/KProfiles/android_packages_apps_KProfiles packages/apps/KProfiles
+git clone --depth=1 https://github.com/KProfiles/android_packages_apps_KProfiles packages/apps/KProfiles
 
 # echo "Add MIUI Camera support"
-
 for d in device/xiaomi/*/; do
     folder=$(basename "$d")
     if [ "$folder" != "sm8450-common" ] && [ "$folder" != "miuicamera-cupid" ]; then

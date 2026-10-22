@@ -17,11 +17,11 @@ read -p "> " ROM_FOLDER_NAME
 echo -e "----------------------------------------\n"
 
 # Hardcoded list of device folders from your image
-DEVICES=("cupid" "diting" "mayfly" "thor" "unicorn" "zeus")
+DEVICES=("cupid" "diting" "mayfly" "thor" "unicorn" "zeus" "mondrian" "marble")
 IMG_FILES=("boot" "dtbo" "recovery" "vendor_boot")
 
 # Path definitions
-REMOTE_PATH="/serverhive/joshaby/out/target/product"
+REMOTE_PATH="/serverhive/joshaby/$ROM_FOLDER_NAME/out/target/product"
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")  
 LOCAL_PATH="$HOME/ROMs/$ROM_FOLDER_NAME/$TIMESTAMP"                 
 
@@ -65,7 +65,7 @@ for DEVICE in "${DEVICES[@]}"; do
     # Download ROM file
     # sshpass -p "$SSH_PASS" scp -P "$SSH_PORT" -o StrictHostKeyChecking=no "$SSH_USER@$SSH_HOST:$REMOTE_DIR/$ROM_NAME*$DEVICE*.zip" "$LOCAL_DEST/"
 
-    REAL_FILE_PATH=$(sshpass -p "$SSH_PASS" ssh -p "$SSH_PORT" -o StrictHostKeyChecking=no "$SSH_USER@$SSH_HOST" "ls $REMOTE_DIR/$ROM_NAME*$DEVICE*.zip" | head -n 1)
+    REAL_FILE_PATH=$(sshpass -p "$SSH_PASS" ssh -p "$SSH_PORT" -o StrictHostKeyChecking=no "$SSH_USER@$SSH_HOST" "ls $REMOTE_DIR/*$ROM_NAME*$DEVICE*.zip" | grep -v "INCREMENTAL" | head -n 1)
     lftp -u "$SSH_USER", -e "set sftp:connect-program 'sshpass -p "$SSH_PASS" ssh -p $SSH_PORT -c aes128-ctr -o StrictHostKeyChecking=no'; pget -n 8 -O $LOCAL_DEST sftp://$SSH_HOST$REAL_FILE_PATH; quit"
 
     if [ $? -eq 0 ]; then

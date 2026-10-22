@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Add ROM Flags
-DEVICES=("cupid" "diting" "mayfly" "thor" "unicorn" "zeus")
+DEVICES=("cupid" "diting" "mayfly" "thor" "unicorn" "zeus" "mondrian" "marble")
 for DEVICE in "${DEVICES[@]}"; do
     echo -e "\nTARGET_HAS_UDFPS := true
     TARGET_ENABLE_BLUR := true
